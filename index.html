@@ -7,6 +7,7 @@
     <title>weather app</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -19,19 +20,11 @@
 
                 <div class="search-div">
                     <input type="text" class="search-bar" placeholder="Search...">
-                    <button class="button"><img class="magnifying-glass-solid" src="/assets/magnifying-glass-solid.svg"
-                            alt=""></button>
+                    <button class="button"><img class="magnifying-glass-solid" src="/assets/magnifying-glass-solid.svg" alt=""></button>
                 </div>
-
-                <div>
+                <div class="weather loading">
                     <h1 class="city">Dallas</h1>
-                    <h2>Today</h2>
-                </div>
-
-                <div>
-                    <img class="icon" alt="weather icon">
-                </div>
-                <div class="today-temperature-wrapper">
+                    <img class="icon" src="https://openweathermap.org/img/wn/04d@2x.png">
                     <div class="today-temperature">
                         <h1 class="temp">80°F</h1>
                         <div class="description">Cloudy</div>
@@ -39,14 +32,11 @@
                         <div class="wind">Wind speed: 5.2 mph</div>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
 
 
-
-    <script src="app.js"></script>
 </body>
 
 </html>

@@ -19,8 +19,22 @@ let weather = {
         document.querySelector(".temp").innerHTML = temp + "°F";
         document.querySelector(".humidity").innerHTML = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerHTML = "Wind speed: " + speed + " mph";
-
-
-    }
+        document.querySelector(".weather").classList.remove("loading");
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
+    },
+    search: function () {
+        this.fetchWeather(document.querySelector(".search-bar").value);
+    },
 }
 
+document.querySelector(".button").addEventListener("click", function () {
+    weather.search();
+});
+
+document.querySelector(".search-bar").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        weather.search();
+    }
+});
+
+weather.fetchWeather("Dallas");
