@@ -1,0 +1,66 @@
+body {
+    display: block;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://source.unsplash.com/random/?city,night');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    height: 100vh;
+}
+
+.search-div {
+    margin: 2rem auto;
+}
+
+.card {
+    border: 1px solid black;
+    background: black;
+    color: white;
+    opacity: 0.8;
+    width: 350px;
+    max-width: 400px;
+    border-radius: 30px;
+    padding-bottom: 2rem;
+}
+
+.search-bar {
+    border-radius: 30px;
+    height: 1.5rem;
+    width: 12rem;
+    background: white;
+    opacity: .8;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1rem;
+    outline: none;
+}
+
+.button {
+    width: 25px;
+    border: 1px solid black;
+    position: absolute;
+    margin-top: 4px;
+    margin-left: -30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.magnifying-glass-solid {
+    width: 100%;
+    width: 15px;
+    height: 18px;
+}
+
+.description { text-transform: capitalize; }
